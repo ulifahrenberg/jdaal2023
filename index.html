@@ -19,6 +19,8 @@
     <script type="text/javascript" id="MathJax-script" async
 	    src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
     </script>
+    
+<!--
     <script language="javascript">
       function toggleDiv(divid){
 	if(document.getElementById(divid).style.display == 'none'){
@@ -27,6 +29,7 @@
 	  document.getElementById(divid).style.display = 'none';
 	}}
     </script>
+-->
 
     <title>Journée(s) GT DAAL 2023</title>
   </head>
@@ -43,7 +46,8 @@
     <div class="sideBox LHS">
       <a href="#invited">&rsaquo; Invited speakers</a>
       <a href="#program">&rsaquo; Program</a>
-      <a href="#reg">&rsaquo; Registration</a>
+      <!-- <a href="#reg">&rsaquo; Registration</a> -->
+      <a href="#abs">&rsaquo; Abstracts</a>
       <a href="#venue">&rsaquo; Local info</a>
       <a href="#orga">&rsaquo; Organisation</a>
       <a href="#contact">&rsaquo; Contact</a>
@@ -69,7 +73,7 @@
 	<li><a href="https://noamz.org/"><em>Noam Zeilberger</em>, LIX</a></li>
       </ul>
 
-      <h1 id="program">Preliminary Program</h1>
+      <h1 id="program">Program</h1>
 
       <p><table padding='0px', cellpadding='2px', width='99%'>
 	  <tr style="background-color:green;color:white" valign="top">
@@ -202,7 +206,7 @@
       </p>
 -->
       <h1 id="reg">Registration</h1>
-
+<!--
       <p>
 	Participation in the Journée GT DAAL is free of charge,
 	but for organisational reasons you must register in order to participate.
@@ -211,6 +215,13 @@
       <p>
 	Please go to <a href="https://framadate.org/Q1oGVfBRZ5DPpEdo">https://framadate.org/Q1oGVfBRZ5DPpEdo</a>
 	for registration.  Deadline <strong>12 April</strong>.
+      </p>
+-->
+      <p>
+	Registration is now closed.
+	If you have not registered but want to attend,
+	send an email to <a href="mailto:uli@lrde.epita.fr">uli@lrde.epita.fr</a>
+	and we'll see what we can do.
       </p>
 
       <h1 id="venue">Local information</h1>
@@ -226,6 +237,81 @@
 	  </ul>
       </p>
 
+      <h1 id="abs">Abstracts</h1>
+
+      <h3>Marie Van Den Bogaard: <em>Subgame-perfect equilibria in multiplayer games</em></h3>
+
+      <p>
+	Multiplayer games on graphs are a powerful tool to model rich reactive systems. In this model, each player has its own objective, which can coincide or not with the ones of the other players. We then speak of non zero-sum games, and we look at solution concepts for this setting. Most famous of them, the Nash Equilibrium, makes the assumption that the players are rational, to a certain extent. Indeed, one shortcoming of this concept is the tolerance for non-credible threats : players may, in some scenarios, plan behaviours that are no longer taking their own objectives into account. In this talk, we focus on a refinement of Nash Equilibria : Subgame Perfect Equilibria, which make the assumption that players behave rationally in all possible scenarios. We propose a general approach to solve the <em>Non-cooperative Rational Synthesis Problem</em>: given a multiplayer game and a distinguished player $P$, does there exist a strategy for this player that is winning in every scenario where the others play rationally?<br />
+	This is joint work with Véronique Bruyère (Université de Mons, BE), Jean-François Raskin and Alexis Reynouard (Université libre de Bruxelles, BE).
+      </p>
+      
+      <h3>Corentin Barloy: <em>Progress on weak validation of streamed trees</em></h3>
+
+      <p>
+	This is about ongoing research. Processing tree-structured data (like XML) in the streaming model is a challenge. In this work, we assume that all the documents represents correct trees and we only focus on validating properties. Segoufin and Vianu raised the problem of deciding whether a regular property can be validated in constant space. We conjecture that there is a trichotomy: either a document can be validated: i) in constant space ii) in logarithmic space and not in sub-logarithmic space iii) in linear space and not in sub-linear space. We propose some leads that involve the algebraic theory of regular tree languages: the framework of tree algebras introduced by Bojańczyk and Walukiewicz. This gives partial result, as which commutative regular properties can be validated in constant space.
+      </p>
+
+      <h3>Philipp Schlehuber-Caissier: <em>Strategy learning from timed automata</em></h3>
+
+      <p>
+	In this work we use a pipeline for verifiable learning of cooperative timed strategies.
+	We show how to train a machine learning based model from verifiable data obtained
+	from timed automata runs which are refined using SMT based techniques before being
+	used as data.
+	On a side-note we also discuss associated decidability and performance issues
+	which derived from our model using stopwatches.
+      </p>
+
+      <h3>Nguyễn Lê Thành Dũng: <em>Revisiting the growth of polyregular functions</em></h3>
+
+      <p>
+	The class of polyregular functions is composed of the string-to-string functions computed by pebble transducers. While this machine model (which extends two-way finite transducers) is two decades old, several alternative characterizations of polyregular functions have been discovered since 2018, demonstrating their canonicity. The name comes from the polynomial bound on the growth rate of these functions: $|f(w)| = |w|^{O(1)}$ where $|w|$ is the length of the string $w$.<br />
+	In this talk, after recalling this context, I will present some results that either relate the growth rate of a polyregular function (perhaps belonging to some subclass) to the "resources" needed to compute it, or show that there is no such relationship. Some of these results were first shown by Bojańczyk, but we propose significantly simplified proofs.<br />
+	This is joint work with Sandra Kiefer and Cécilia Pradic, see the unfinished preprint <a href="https://arxiv.org/abs/2301.09234">https://arxiv.org/abs/2301.09234</a> (and Bojańczyk's paper <a href="https://arxiv.org/abs/2212.11631">https://arxiv.org/abs/2212.11631</a>).
+      </p>
+
+      <h3>Corto Mascle: <em>Model-checking lock-sharing systems with tree automata</em></h3>
+
+      <p>
+	We consider a parameterized model of distributed systems where pushdown  processes may spawn new processes, and synchronisation is enforced by locks that can be created and passed to spawned processes.
+	Runs of such systems can be represented as trees, and there is an automaton recognising trees representing runs of a given system.
+	This gives an algorithm to check various regular properties of runs under strong fairness condition.
+      </p>
+
+      <h3>Théo Matricon: <em>Program synthesis by examples</em></h3>
+
+      <p>
+	Program Synthesis by examples is the task of generating a program given examples of inputs output pairs that satisfies the examples.
+	A program has the advantage of being interpretable both by humans and machine, as such it can also be checked.
+	The  space of programs, described by a grammar, becomes exponentially bigger as depth increases.
+	We propose to limit this growth making use of tree automata to describe the constraints about the task at hand.
+	Furthermore, we also propose to enhance our programs as knowledge-powered programs using knowledge graphs (or databases) so
+	that our programs can use knowledge about the world and not only the one defined in the grammar.
+      </p>
+
+      <h3>Liat Peterfreund: <em>Querying incomplete numerical data: between certain and possible answers</em></h3>
+
+      <p>
+	Queries with aggregation and arithmetic operations, as well as incomplete data, are common in real-world databases, but we lack a good understanding of how they should interact. On the one hand, systems based on SQL provide ad-hoc rules for numerical nulls, on the other, theoretical research largely concentrates on the standard notions of certain and possible answers which in the presence of numerical attributes and aggregates are often meaningless.<br />
+	In this work, we define a principled compositional framework for databases with numerical nulls and answering queries with arithmetic and aggregations over them. We assume that missing values are given by probability distributions associated with marked nulls, which yields a model of probabilistic bag databases. We concentrate on queries that resemble standard SQL with arithmetic and aggregation and show that they are measurable, and that their outputs have a finite representation. Moreover, since the classical forms of answers provide little information in the numerical setting, we look at the probability that numerical values in output tuples belong to specific intervals. Even though their exact computation is intractable, we show efficient approximation algorithms to compute such probabilities.<br />
+
+	The talk is based on joint work with Marco Console and Leonid Libkin, and will be presented at PODS 2023.
+      </p>
+
+      <h3>Anantha Padmanabha: <em>Algorithms for consistent query answering under primary key constraints</em></h3>
+
+      <p>
+	Databases often have constraints. One of the basic constraints is the "primary key constraint" which states there can be at most one tuple for every primary key. However, these days it is common to have databases that violate such constraints which is called an "inconsistent database". In particular, if a database violates primary key constraint, it will contain more than one tuple for the same primary key. In this setting, the notion of a repair is defined by picking exactly one tuple for each primary key (maximal consistent subset of the database). A Boolean conjunctive query $q$ is certain for an inconsistent database $D$ if $q$ evaluates to true over all repairs of $D$. In this context, we have a dichotomy conjecture that states that for a fixed boolean conjunctive query $q$, testing whether $q$ is certain for an input database $D$ is either polynomial time or coNP-complete.<br />
+	The conjecture is open in general, but has been verified for self-join-free and path queries. However, the polynomial time algorithms known in the literature are complex and use different strategies in the two cases.  We propose a simple inflationary fixpoint algorithm for consistent query answering which  correctly computes certain answers when the query q falls in the polynomial time cases for self-join-free queries and path queries.  This raises a natural question, whether this algorithm works for all polynomial time cases. We answer this negatively and show that there are polynomial time certain queries (with self-joins) which cannot be computed by such an algorithm. These results were obtained in collaboration with Diego Figueira, Luc Segoufin and Cristina Sirangelo and was presented at ICDT'23.
+      </p>
+
+      <h3>Rémi Morvan: <em>Approximation and semantic tree-width of conjunctive regular path queries</em></h3>
+
+      <p>
+	Conjunctive Regular Path Queries (CRPQs) form an expressive query language on edge-labeled graphs (a.k.a. graph databases) whose core feature is to allow the user to query the existence of a path whose label belongs to some regular language. While the problem of, given a graph database and a CRPQ, to decide if the query holds on this database is NP-complete, it becomes polynomial-time solvable when restricted to classes queries of bounded tree-width. This begs the following question: given a CRPQ, can we decide if it is equivalent to a CRPQ of tree-width k? In 2013, Barceló, Romero and Vardi gave a positive answer to this question for the case $k=1$. In this work, we show that the problem is also decidable for every $k\ge 2$. This is joint work with Diego Figueira, published at ICDT 2023.
+      </p>
+      
       <h1 id="orga">Organisation</h1>
 
       <ul>
